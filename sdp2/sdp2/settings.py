@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
+import django_heroku
+
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -138,3 +140,5 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'bharathch596@gmail.com'
 #app password refer flask
 EMAIL_HOST_PASSWORD = 'smoeiouhfxpghdny'
+django_heroku.settings(locals())
+
