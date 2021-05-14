@@ -18,7 +18,9 @@ urlpatterns=[
     path("doctoradvice",doctoradvice,name='doctoradvice'),
     path("Getadvice",Getadvice,name="Getadvice"),
     path('api', views.ChartData.as_view()),
-    path('new', views.HomeView.as_view())
+    path('new', views.HomeView.as_view()),
+    path("ambulance", ambulance, name="ambulance"),
+    path("amb",amb,name="amb")
 
 
 

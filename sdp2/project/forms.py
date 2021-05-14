@@ -1,5 +1,5 @@
 from django import forms
-from .models import User, Appointment, DoctorAdvice, Prescription
+from .models import User, Appointment, DoctorAdvice, Prescription, Ambulance
 
 
 class UserForm(forms.ModelForm):
@@ -19,6 +19,11 @@ class PrescriptionForm(forms.ModelForm):
     class Meta:
         model=Prescription
         fields="__all__"
+class AmbulanceForm(forms.ModelForm):
+    class Meta:
+        model=Ambulance
+        fields="__all__"
+
 
 
 

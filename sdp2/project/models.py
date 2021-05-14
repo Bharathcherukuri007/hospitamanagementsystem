@@ -41,6 +41,12 @@ class Prescription(models.Model):
 
      def __str__(self):
          return self.patientname +"/"+ self.symptoms
+class Ambulance(models.Model):
+    name=models.CharField(max_length=30)
+    phonenumber=models.CharField(max_length=30)
+    location=models.CharField(max_length=30)
+
+
 
 
 
