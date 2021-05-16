@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
-import django_heroku
+
 
 import os
 
@@ -28,7 +28,7 @@ SECRET_KEY = '*y$l)(ceqrnpx7qim-as6i5lvy1s!9(7(v=h8rgjan-bl!&1_3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -139,6 +139,6 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'bharathch596@gmail.com'
 #app password refer flask
+
 EMAIL_HOST_PASSWORD = 'smoeiouhfxpghdny'
-django_heroku.settings(locals())
 
