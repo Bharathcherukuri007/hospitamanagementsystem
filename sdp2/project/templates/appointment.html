@@ -67,7 +67,7 @@
                     <li><a href="services.html">Services</a></li>
                     <li><a href="">Research</a></li>
                     <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact_us.html">Contact Us</a></li>
+                    <li><a href="viewdoctors">view doctors</a></li>
                      <li><a href="register">Register</a></li>
                      <li><a href="login">Login</a></li>
 
@@ -85,6 +85,7 @@
     <h1>Schedule a visit</h1>
 
     <hr>
+
       <label for="email"><br>Select location</br></label>
       {{appointmentform.selectlocation}}<br>
 
@@ -102,6 +103,10 @@
     {{appointmentform.doctor}}<br>
        <label for="psw-repeat"><b>Time</b></label>
     {{appointmentform.time}}
+      <label for="psw-repeat"><b>previoushealthrecords</b></label>
+    {{appointmentform.previoushealthrecord}}<br>
+      <label for="psw-repeat"><b>previousmedication</b></label>
+    {{appointmentform.previousmedication}}
 
 
 

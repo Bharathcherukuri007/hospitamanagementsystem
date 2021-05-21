@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'project',
-    'rest_framework'
+    'rest_framework',
+    'pulp'
 ]
 
 MIDDLEWARE = [
@@ -128,7 +129,7 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
-MEDIA_URL= '/images/'
+
 
 STATICFILES_DIRS=[
     os.path.join(BASE_DIR,"user/static")
@@ -142,3 +143,6 @@ EMAIL_HOST_USER = 'bharathch596@gmail.com'
 
 EMAIL_HOST_PASSWORD = 'smoeiouhfxpghdny'
 
+MEDIA_URL ='/media/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')

@@ -72,7 +72,7 @@
                     <li><a href="services.html">Services</a></li>
                     <li><a href="">Research</a></li>
                     <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact_us.html">Contact Us</a></li>
+                    <li><a href="doctorname">Doctordashboard</a></li>
                      <li><a href="register">Register</a></li>
                      <li><a href="login">Login</a></li>
 
@@ -89,6 +89,7 @@
 <h2>Doctors  module</h2>
 <table class="table table-striped">
   <thead>
+  {% csrf_token %}
     <tr>
 
       <th scope="col">Patient name</th>
@@ -111,7 +112,11 @@
       <th scope="row">{{i.patientname}}</th>
       <td>{{i.symptoms}}</td>
       <td>{{doctoradvice.patientname}}</td>
-        <td>{{doctoradvice.remedy}}</td>
+        <td>
+
+            {{doctoradvice.remedy}}
+
+        </td>
 
 
 
